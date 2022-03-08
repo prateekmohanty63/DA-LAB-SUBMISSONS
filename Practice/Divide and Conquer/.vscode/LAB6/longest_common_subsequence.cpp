@@ -16,6 +16,32 @@ int longestCommonSubsequence(string a, string b, int m, int n)
     return max(longestCommonSubsequence(a, b, m - 1, n), longestCommonSubsequence(a, b, m, n - 1));
 }
 
+// using dynamic programming
+
+int longestSubsequence(string a, string b, int n, int m)
+{
+
+    int dp[n + 1][m + 1];
+
+    for (int i = 0; i <= n; i++)
+    {
+        for (int j = 0; j <= m; j++)
+        {
+            if (i == 0 || j == 0)
+                dp[i][j] = 0;
+
+            else if (a[i - 1] == b[j - 1])
+                dp[i][j] = 1 + dp[i - 1][j - 1];
+
+            else
+            {
+                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1]);
+            }
+        }
+    }
+    return dp[n][m];
+}
+
 int main()
 {
     string a, b;
@@ -25,6 +51,7 @@ int main()
     int m = b.length();
 
     cout << "The longest common subsequence is: ";
-    cout << longestCommonSubsequence(a, b, n, m);
+    cout << longestCommonSubsequence(a, b, n, m) << endl;
+    cout << longestSubsequence(a, b, n, m);
     return 0;
 }
