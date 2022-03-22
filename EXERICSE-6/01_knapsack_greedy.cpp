@@ -70,10 +70,10 @@ double Knapsack(Item it[], int w, int n)
 
 int main()
 {
-    int w = 15;
-    Item arr[] = {{10, 2}, {15, 5}, {7, 2}, {9, 4}, {6, 1}, {20, 8}, {30, 6}};
+    int w = 21;
+    Item arr[] = {{120, 20}, {56, 14}, {40, 8}, {48, 4}};
     cout << "Maximum Profit we can obtain = "
-         << Knapsack(arr, w, 7);
+         << Knapsack(arr, w, 4);
 
     return 0;
 }

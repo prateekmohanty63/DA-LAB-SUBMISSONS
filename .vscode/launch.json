@@ -9,9 +9,9 @@
         ""
       ],
       "stopAtEntry": false,
-      "cwd": "c:/Users/BRBCO/Desktop/VIT SEM-4/SUBJECTS/DAA-LAB",
+      "cwd": "e:/VIT SEM-4/SUBJECTS/DAA-LAB",
       "environment": [],
-      "program": "c:/Users/BRBCO/Desktop/VIT SEM-4/SUBJECTS/DAA-LAB/build/Debug/outDebug",
+      "program": "e:/VIT SEM-4/SUBJECTS/DAA-LAB/build/Debug/outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
       "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
