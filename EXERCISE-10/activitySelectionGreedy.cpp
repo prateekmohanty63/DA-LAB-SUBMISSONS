@@ -33,9 +33,9 @@ int main()
 
     sort(activityTime.begin(), activityTime.end(),sortbysec);
 
-    for(int i=0;i<n;i++){
-        cout<<activityTime[i].first<<" "<<activityTime[i].second<<endl;
-    }
+    // for(int i=0;i<n;i++){
+    //     cout<<activityTime[i].first<<" "<<activityTime[i].second<<endl;
+    // }
 
     // applying the greedy algorithm we get
 
