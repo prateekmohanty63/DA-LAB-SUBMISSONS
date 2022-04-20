@@ -3,6 +3,12 @@
 using namespace std;
 
 
+
+
+// THERE ARE TWO KINDS OF DYNAMIC PROGRAMMING APPROACHES
+// MEMOIZATION  (TOP DOWN)
+// BOTTOM UP (ITERATIVE)
+
 // this is using brute force method
 // TIME COMPLEXITY IS : O(N^2)
 int bruteForce(string a,string b)
