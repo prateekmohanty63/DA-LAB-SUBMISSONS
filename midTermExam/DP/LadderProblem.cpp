@@ -27,7 +27,7 @@ int ladderProblem(int n,int k)
 
 // top down approach 
 
-// bottom up approach (memoization)
+// top down approach (memoization)
 
 int ladderProblem2(int n,int k,int *dp)
 {
